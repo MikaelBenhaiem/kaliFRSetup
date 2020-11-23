@@ -14,6 +14,11 @@ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.ta
 echo "setxkbmap fr" >> ~/.bashrc 
 echo "export PATH=$PATH:/usr/sbin" >> ~/.bashrc 
 
+# Raccourci "ll" pour "ls -la"
+sudo touch /usr/bin/ll
+sudo echo "ls -la" > "/usr/bin/ll"
+sudo chmod +x /usr/bin/ll
+
 # Si pas de réseau : 
 # /etc/network/interfaces 
 # auto eth0
