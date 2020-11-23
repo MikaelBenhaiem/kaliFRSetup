@@ -16,8 +16,9 @@ echo "export PATH=$PATH:/usr/sbin" >> ~/.bashrc
 
 # Raccourci "ll" pour "ls -la"
 sudo touch /usr/bin/ll
-sudo echo "ls -la" > "/usr/bin/ll"
-sudo chmod +x /usr/bin/ll
+sudo chmod 777 /usr/bin/ll
+echo "ls -la" > "/usr/bin/ll"
+
 
 # Si pas de réseau : 
 # /etc/network/interfaces 
