@@ -14,4 +14,9 @@ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.ta
 echo "setxkbmap fr" >> ~/.bashrc 
 echo "export PATH=$PATH:/usr/sbin" >> ~/.bashrc 
 
-
+# Si pas de réseau : 
+# /etc/network/interfaces 
+# auto eth0
+# iface eth0 inet loopback
+#
+# sudo dhclient eth0
