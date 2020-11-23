@@ -7,3 +7,11 @@ export PATH=$PATH:/usr/sbin
 mkdir ~/outils
 cd outils
 
+# Suppression mise en veille
+sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+
+# Clavier Azerty et changement de PATH dans le .bashrc
+echo "setxkbmap fr" >> ~/.bashrc 
+echo "export PATH=$PATH:/usr/sbin" >> ~/.bashrc 
+
+
