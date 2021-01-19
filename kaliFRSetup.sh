@@ -26,3 +26,8 @@ echo "ls -la" > "/usr/bin/ll"
 # iface eth0 inet loopback
 #
 # sudo dhclient eth0
+
+
+# Outils utiles
+sudo apt-get install gobuster
+sudo apt-get install crackmapexec
